@@ -106,28 +106,28 @@ namespace FitnessManager
 
 
         public string Description()
-        //{
-        //    string bmiString;
-        //    double bmi = CalculateBMI(Height, Weight);
-        //    if (bmi > 0)
-        //    {
-        //        bmiString = bmi + "";//Senza la stringa vuota da errore perchè non può convertire double in string, in alternativa su può castare
-        //    }
-        //    else
-        //    {
-        //        bmiString = "BMI non disponibile";
-        //    }
-            
-        //    string description = "Dati del cliente: \n" + "Id: " + Id + "\n" 
-        //                         + "Nome: " + Name + " " + "Cognome: " + Surname + "\n"
-        //                         + "Anni: " + Age + "\n"
-        //                         + "Sesso: " + getGenderString(Gender) + "\n"
-        //                         + "Altezza: " + Height + " " + "Metri" + "\n" 
-        //                         + "Peso: " + Weight + "\n"                                 
-        //                         + "BMI: " + CalculateBMI(Height, Weight) + "\n"
-        //                         + "Data di iscrizione: " + SubscriptionDate.ToString("dd - MM - yyyy") + "\n";
-        //    return description;
-        //}
+        {
+            string bmiString;
+            double bmi = CalculateBMI(Height, Weight);
+            if (bmi > 0)
+            {
+                bmiString = bmi + "";//Senza la stringa vuota da errore perchè non può convertire double in string, in alternativa su può castare
+            }
+            else
+            {
+                bmiString = "BMI non disponibile";
+            }
+
+            string description = "Dati del cliente: \n" + "Id: " + Id + "\n"
+                                 + "Nome: " + Name + " " + "Cognome: " + Surname + "\n"
+                                 + "Anni: " + Age + "\n"
+                                 + "Sesso: " + getGenderString(Gender) + "\n"
+                                 + "Altezza: " + Height + " " + "Metri" + "\n"
+                                 + "Peso: " + Weight + "\n"
+                                 + "BMI: " + CalculateBMI(Height, Weight) + "\n"
+                                 + "Data di iscrizione: " + SubscriptionDate.ToString("dd - MM - yyyy") + "\n";
+            return description;
+        }
 
 
         private string getGenderString(Gender gender)
